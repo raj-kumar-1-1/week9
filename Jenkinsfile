@@ -6,8 +6,8 @@ pipeline {
             steps {
                 script {
                     bat 'docker build -t w9-csedd .'
-                     bat 'docker tag w9-csedd:latest shiv4j/w9-dh-app-csedd:latest'
-                      bat 'docker push shiv4j/w9-dh-app-csedd:latest'
+                     bat 'docker tag w9-csedd:latest rajkumar121/w9-dh-app-csedd:latest'
+                      bat 'docker push rajkumar121/w9-dh-app-csedd:latest'
                 }
             }
         }
