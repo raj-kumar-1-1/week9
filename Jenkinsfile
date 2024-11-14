@@ -2,15 +2,15 @@ pipeline {
     agent any 
 
     stages {
-        stage('Build') {
-            steps {
-                script {
-                    bat 'docker build -t week9 .'
-                     bat 'docker tag week9:latest rajkumar121/week9:latest'
-                      bat 'docker push rajkumar121/week9:latest'
-                }
-            }
-        }
+        // stage('Build') {
+        //     steps {
+        //         script {
+        //             bat 'docker build -t week9 .'
+        //              bat 'docker tag week9:latest rajkumar121/week9:latest'
+        //               bat 'docker push rajkumar121/week9:latest'
+        //         }
+        //     }
+        // }
         stage('Test') {
             steps {
                 script {
